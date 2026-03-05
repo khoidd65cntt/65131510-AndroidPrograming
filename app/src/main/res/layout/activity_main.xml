@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!-- Nhãn a -->
+    <TextView
+        android:id="@+id/labelA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/edtSoA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtSoA" />
+
+    <!-- Ô nhập a - Đã thêm các thuộc tính để chắc chắn nhập được -->
+    <EditText
+        android:id="@+id/edtSoA"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Nhãn b -->
+    <TextView
+        android:id="@+id/labelB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="b"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/edtSoB"
+        app:layout_constraintStart_toStartOf="@+id/labelA"
+        app:layout_constraintTop_toTopOf="@+id/edtSoB" />
+
+    <!-- Ô nhập b -->
+    <EditText
+        android:id="@+id/edtSoB"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edtSoA"
+        app:layout_constraintTop_toBottomOf="@+id/edtSoA" />
+
+    <!-- Nút Tính Tổng -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#4466BB"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Tính Tổng"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSoB" />
+
+    <!-- Nhãn Kết quả -->
+    <TextView
+        android:id="@+id/labelKQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kết quả:"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/txtKetQua"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtKetQua" />
+
+    <!-- Ô hiển thị kết quả -->
+    <TextView
+        android:id="@+id/txtKetQua"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelKQ"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
