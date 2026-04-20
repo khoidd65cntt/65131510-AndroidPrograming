@@ -1,6 +1,6 @@
 # 65131510-AndroidPrograming
 1. Giao diện trang chủ:
-2. <img width="377" height="832" alt="image" src="https://github.com/user-attachments/assets/ddbf0169-e964-43f2-8300-7ef40ddb1838" />
+<img width="377" height="832" alt="image" src="https://github.com/user-attachments/assets/ddbf0169-e964-43f2-8300-7ef40ddb1838" />
 
 3. Chức năng 1:
 <img width="395" height="845" alt="image" src="https://github.com/user-attachments/assets/a6f3302d-57fa-4659-a926-2ba8a9774efc" />
