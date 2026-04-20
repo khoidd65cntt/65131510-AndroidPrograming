@@ -11,7 +11,7 @@
 5. Chức năng 3:
 <img width="415" height="855" alt="image" src="https://github.com/user-attachments/assets/ee332b42-4e58-48a1-bbca-0d76c5815b5c" />
 
-6.Chức năng 4:
+6. Chức năng 4:
 <img width="397" height="826" alt="image" src="https://github.com/user-attachments/assets/0ca1afcf-0d65-42e9-8ee4-9a20620c23c2" />
 
 
