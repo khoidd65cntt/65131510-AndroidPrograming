@@ -1,17 +1,26 @@
 package thigk2.dodangkhoi;
 
-public class Chucnang3 {
-    private int hinhAnh;
-    private String ten;
-    private String queQuan;
+import android.os.Bundle;
+import android.widget.ListView;
+import androidx.appcompat.app.AppCompatActivity;
+import java.util.ArrayList;
 
-    public Chucnang3(int hinhAnh, String ten, String queQuan) {
-        this.hinhAnh = hinhAnh;
-        this.ten = ten;
-        this.queQuan = queQuan;
+public class Chucnang3 extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_chucnang3);
+
+        ListView lvDanhNhan = findViewById(R.id.lvDanhNhan);
+        ArrayList<DanhNhan> listDanhNhan = new ArrayList<>();
+
+        listDanhNhan.add(new DanhNhan(R.mipmap.ic_launcher, "Lý Thường Kiệt", "Hà Nội"));
+        listDanhNhan.add(new DanhNhan(R.mipmap.ic_launcher, "Trần Hưng Đạo", "Nam Định"));
+        listDanhNhan.add(new DanhNhan(R.mipmap.ic_launcher, "Nguyễn Trãi", "Hà Nội"));
+        listDanhNhan.add(new DanhNhan(R.mipmap.ic_launcher, "Quang Trung", "Bình Định"));
+        listDanhNhan.add(new DanhNhan(R.mipmap.ic_launcher, "Võ Nguyên Giáp", "Quảng Bình"));
+
+        DanhNhanAdapter adapter = new DanhNhanAdapter(this, R.layout.item_danhnhan, listDanhNhan);
+        lvDanhNhan.setAdapter(adapter);
     }
-
-    public int getHinhAnh() { return hinhAnh; }
-    public String getTen() { return ten; }
-    public String getQueQuan() { return queQuan; }
 }
