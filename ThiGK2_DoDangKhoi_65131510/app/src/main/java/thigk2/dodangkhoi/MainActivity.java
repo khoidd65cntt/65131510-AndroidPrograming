@@ -10,9 +10,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.btn1).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ChucNang1Activity.class)));
-        findViewById(R.id.btn2).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ChucNang2Activity.class)));
-        findViewById(R.id.btn3).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ChucNang3Activity.class)));
-        findViewById(R.id.btn4).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ChucNang4Activity.class)));
+        findViewById(R.id.btn1).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Chucnang1.class)));
+        findViewById(R.id.btn2).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Chucnang2.class)));
+        findViewById(R.id.btn3).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Chucnang3.class)));
+        findViewById(R.id.btn4).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, Chucnang4.class)));
     }
 }

@@ -20,7 +20,7 @@ public class Chucnang3 extends AppCompatActivity {
         listDanhNhan.add(new DanhNhan(R.mipmap.ic_launcher, "Quang Trung", "Bình Định"));
         listDanhNhan.add(new DanhNhan(R.mipmap.ic_launcher, "Võ Nguyên Giáp", "Quảng Bình"));
 
-        DanhNhanAdapter adapter = new DanhNhanAdapter(this, R.layout.item_danhnhan, listDanhNhan);
+        DanhNhanAdapter adapter = new DanhNhanAdapter(this, R.layout.activity_item_danh_nhan, listDanhNhan);
         lvDanhNhan.setAdapter(adapter);
     }
 }
